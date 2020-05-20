@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="contenedor">
+        <div>
+            <div id="derecha" class="flex">
+                <br><br><br><br>
+                <box id="caji"><button id="botonizquierda" type="button" onclick="">▶</button></box><br><br>
+                <box id="caji"><button id="botonizquierda" type="button" onclick="" >▶</button></box><br><br>
+                <box id="caji"><button id="botonizquierda" type="button" onclick="" >▶</button></box><br><br>
+            </div>
+            
+            <div id="centro">
+                <div id="pag1">
+                    <label for="" name="contpag1" style="font-size: 200%;font-weight: bolder;" >¡Bienvenido al Banco!</label><br>
+                    <label for="" name="contpag1" style="font-size: 100%;">Por favor digite su clave </label><br>
+                    <input type="text" name="contpag1">
+                </div>
+            </div>
+
+            <div id="izquierda" class="flex">
+                <br><br><br><br>
+                <box id="cajd"><button id="botonderecha" type="button" onclick="">◀</button></box><br><br>
+                <box id="cajd"><button id="botonderecha" type="button" onclick="">◀</button></box><br><br>
+                <box id="cajd"><button id="botonderecha" type="button" onclick="">◀</button></box><br><br>
+                
+            </div>
+        </div><br>
+        <div id="contenedor2">
+            <div id="teclado">
+                <form name="tecladoo">
+                    <input type="button" value="7" onclick="ingresarnumero(this.value)">
+                    <input type="button" value="8" onclick="ingresarnumero(this.value)">
+                    <input type="button" value="9" onclick="ingresarnumero(this.value)">
+                    <input type="button" value="Aceptar" name="bt" style="background-color: red;"><br>
+
+                    <input type="button" value="4" onclick="ingresarnumero(this.value)">
+                    <input type="button" value="5" onclick="ingresarnumero(this.value)">
+                    <input type="button" value="6" onclick="ingresarnumero(this.value)">
+                    <input type="button" value="clear" name="bt" style="background-color: yellow;"><br>
+
+                    <input type="button" value="1" onclick="ingresarnumero(this.value)">
+                    <input type="button" value="2" onclick="ingresarnumero(this.value)">
+                    <input type="button" value="3" onclick="ingresarnumero(this.value)">
+                    <input type="button" value="ok" name="bt" style="background-color: green;"><br>
+
+                    <input type="button" value="⊠" disabled="true">
+                    <input type="button" value="0" onclick="ingresarnumero(this.value)">
+                    <input type="button" value="." onclick="ingresarnumero(this.value)">
+                    <input type="button" value="⊠" disabled="true" name="bt"><br>
+                </form>
+
+            </div>
+            <div id="finta">
+                <form name="fintaa">
+                    <div>
+                    <div style="float: left;">
+                        <label for="">CARD</label><br>
+                        <button disabled="true" name="fin">___________</button>
+                    </div>
+                    <div style="float: left; margin-left: 10px;">
+                        <label for="">RECEPT</label><br>
+                        <button disabled="true" name="fin">___________</button>
+                    </div>
+                    </div><br><br>
+                
+                    <div style="float: left;">
+                
+                    <label for="">CASH</label><br>
+                    <button disabled="true" name="fin">_________________________</button><br>
+
+                    <label for="">DEPOSIT</label><br>
+                    <button disabled="true"name="fin">_________________________</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+        <div></div>
+
+    </div>
+</body>
+</html>
