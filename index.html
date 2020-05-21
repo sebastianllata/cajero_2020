@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    
 </head>
 <body>
     <div id="contenedor">
         <div>
             <div id="derecha" class="flex">
                 <br><br><br><br>
-                <box id="caji"><button id="botonizquierda" type="button" onclick="">▶</button></box><br><br>
+                <box id="caji"><button id="botonizquierda" type="button" onclick="lolo()">▶</button></box><br><br>
                 <box id="caji"><button id="botonizquierda" type="button" onclick="" >▶</button></box><br><br>
                 <box id="caji"><button id="botonizquierda" type="button" onclick="" >▶</button></box><br><br>
             </div>
             
             <div id="centro">
-                <div id="pag1">
+                <form id="pag1" name="pag1">
                     <label for="" name="contpag1" style="font-size: 200%;font-weight: bolder;" >¡Bienvenido al Banco!</label><br>
                     <label for="" name="contpag1" style="font-size: 100%;">Por favor digite su clave </label><br>
-                    <input type="text" name="contpag1">
-                </div>
+                    <input type="password" name="cajita1" value="" id="contra" >
+                    
+                </form>
             </div>
 
             <div id="izquierda" class="flex">
@@ -38,17 +41,17 @@
                     <input type="button" value="7" onclick="ingresarnumero(this.value)">
                     <input type="button" value="8" onclick="ingresarnumero(this.value)">
                     <input type="button" value="9" onclick="ingresarnumero(this.value)">
-                    <input type="button" value="Aceptar" name="bt" style="background-color: red;"><br>
+                    <input type="button" value="Cancel" name="bt"  onclick="cancel()" style="background-color: red; border-color: red;"><br>
 
                     <input type="button" value="4" onclick="ingresarnumero(this.value)">
                     <input type="button" value="5" onclick="ingresarnumero(this.value)">
                     <input type="button" value="6" onclick="ingresarnumero(this.value)">
-                    <input type="button" value="clear" name="bt" style="background-color: yellow;"><br>
+                    <input type="button" value="Clear" name="bt" onclick="borrar()" style="background-color: rgb(199, 199, 2); border-color: yellow;"><br>
 
                     <input type="button" value="1" onclick="ingresarnumero(this.value)">
                     <input type="button" value="2" onclick="ingresarnumero(this.value)">
                     <input type="button" value="3" onclick="ingresarnumero(this.value)">
-                    <input type="button" value="ok" name="bt" style="background-color: green;"><br>
+                    <input type="button" value="OK" name="bt" onclick="vericlav()" style="background-color: green; border-color: green;"><br>
 
                     <input type="button" value="⊠" disabled="true">
                     <input type="button" value="0" onclick="ingresarnumero(this.value)">
@@ -61,22 +64,22 @@
                 <form name="fintaa">
                     <div>
                     <div style="float: left;">
-                        <label for="">CARD</label><br>
-                        <button disabled="true" name="fin">___________</button>
+                        <label for="" class="ya">CARD</label><br>
+                        <img src="imagenes/Imagen1.png" width="90px" height="25px" alt="">
                     </div>
-                    <div style="float: left; margin-left: 10px;">
-                        <label for="">RECEPT</label><br>
-                        <button disabled="true" name="fin">___________</button>
+                    <div style="float: left; margin-left: 22px;">
+                        <label for="" class="ya">RECEPT</label><br>
+                        <img src="imagenes/Imagen1.png" width="90px" height="25px" alt="">
                     </div>
                     </div><br><br>
                 
                     <div style="float: left;">
                 
-                    <label for="">CASH</label><br>
-                    <button disabled="true" name="fin">_________________________</button><br>
+                    <label for="" class="ya">CASH</label><br>
+                    <img src="imagenes/Imagen1.png" width="80%" height="20%" alt=""><br>
 
-                    <label for="">DEPOSIT</label><br>
-                    <button disabled="true"name="fin">_________________________</button>
+                    <label for="" class="ya">DEPOSIT</label><br>
+                    <img src="imagenes/Imagen1.png" width="80%" height="20%" alt="">
                     </div>
 
                 </form>
