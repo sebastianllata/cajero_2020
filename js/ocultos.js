@@ -139,3 +139,21 @@ function ultimatrans() {
 function liampiar() {
     montotal=[];
 }
+function mostrarprinconsultas() {
+    document.getElementById("princonsultas").style.display ="block";
+}
+function ocultarprinconsultas() {
+    document.getElementById("princonsultas").style.display ="none";
+}
+function sonsul() {
+    var caja = document.getElementById("princonsultas");
+    if (caja.style.display == "none") {
+        mostrarprinconsultas();
+        ocultarultitransac();
+    } else {
+        mostrarultitransac();
+        ocultarprinconsultas();
+    }
+}
+
+

@@ -30,3 +30,11 @@ function pagretir() {
 function pagretir2(){
     window.location =("retiro2.html");
 }
+function pagthanks() {
+    window.location =("gracias.html")
+    
+}
+function pagconsul() {
+    window.location =("consultas.html")
+    
+}

@@ -11,19 +11,19 @@
 </head>
 <body>
     <div id="contenedor" value="pag1">
-        <div>
+        <div id="consulta" style="display: block;">
             <div id="derecha" class="flex"><!--id="botonizquierda" type="button" onclick="pagretir()"-->
                 <br><br><br><br><br>
-                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni1" class="btnfun" onclick="pagretir()"></box>
-                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni2" class="btnfun" onclick="pagconsul()"></box>
-                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni3" class="btnfun" onclick="pagoper()"></box>
+                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni1" class="btnfun" onclick=""></box>
+                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni2" class="btnfun" onclick=""></box>
+                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni3" class="btnfun" onclick=""></box>
                 <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni4" class="btnfun" onclick=""></box>
             </div>
             
             <div id="centro">
                 <div id="pag1" ><!-- class ="row" -->
                     <div id="id1" style="width: 440px; height: 70px;  ">
-                        <label for="" style="font-size: 30px;  font-weight: bold;margin: 27%;color:  rgb(202, 73, 14);;" >Consultas</label>
+                        <label for="" style="font-size: 40px;  font-weight: bold;margin: 30%;color:  rgb(202, 73, 14);;" >Consultas</label>
                     </div><!-- class ="col s12" -->
                     <div>
                         <div id="id3" class="flex1" style=" width: 20px; height: 220px; float: left; " >
@@ -42,8 +42,8 @@
                         <div id="" class="flex2" style=" width: 200px; height: 220px; text-align: end; float: left; ">
                             <box><p class="labels">Saldo Soles</p></box>
                             <box><p class="labels">_  </p></box>
-                            <box><p class="labels"></p></box>
-                            <box><p class="labels">_    </p></box>
+                            <box><p class="labels">_</p></box>
+                            <box><p class="labels">Retroceder</p></box>
                         </div>
                         <div id="id2" class="flex1" style=" width: 20px; height: 220px; text-align: center; ">
                             <box><i class="fas fa-caret-left fa-3x"></i></box>
@@ -59,10 +59,65 @@
 
             <div id="izquierda" class="flex">
                 <br><br><br><br><br>
-                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd1" class="btnfun" onclick="pagtrans()"></box>
+                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd1" class="btnfun" onclick=""></box>
                 <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd2" class="btnfun" onclick=""></box>
-                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd3" class="btnfun" onclick="pagulti()"></box>
-                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd4" class="btnfun" onclick="pagrreto()"></box>
+                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd3" class="btnfun" onclick=""></box>
+                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd4" class="btnfun" onclick="pagprin()"></box>
+                
+            </div>
+        </div>
+        <div id="pagginadesaldo" style="display: none;">
+            <div id="derecha" class="flex"><!--id="botonizquierda" type="button" onclick="pagretir()"-->
+                <br><br><br><br><br>
+                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni1" class="btnfun" onclick=""></box>
+                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni2" class="btnfun" onclick=""></box>
+                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni3" class="btnfun" onclick=""></box>
+                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni4" class="btnfun" onclick=""></box>
+            </div>
+            
+            <div id="centro">
+                <div id="pag1" ><!-- class ="row" -->
+                    <div id="id1" style="width: 440px; height: 70px;  ">
+                        <label for="" style="font-size: 40px;  font-weight: bold;margin: 30%;color:  rgb(202, 73, 14);;" >Consultas</label>
+                    </div><!-- class ="col s12" -->
+                    <div>
+                        <div id="id3" class="flex1" style=" width: 20px; height: 220px; float: left; " >
+                            <!--<box><i class="fas fa-caret-right fa-3x" >Retiro</i></box>-->
+                            <box><i class="fas fa-caret-right fa-3x" ></i></box>
+                            <box><i class="fas fa-caret-right fa-3x" ></i></box>
+                            <box><i class="fas fa-caret-right fa-3x" ></i></box>
+                            <box><i class="fas fa-caret-right fa-3x" ></i></box>
+                        </div><!-- class ="col s6 -->
+                        <div id="" class="flex2" style=" width: 200px; height: 220px; float: left; ">
+                            <box><p class="labels">Saldo Dolares</p></box>
+                            <box><p class="labels"></p></box>
+                            <box><p class="labels"></p></box>
+                            <box><p class="labels">_</p></box>
+                        </div>
+                        <div id="" class="flex2" style=" width: 200px; height: 220px; text-align: end; float: left; ">
+                            <box><p class="labels">Saldo Soles</p></box>
+                            <box><p class="labels">_  </p></box>
+                            <box><p class="labels">_</p></box>
+                            <box><p class="labels">Retroceder</p></box>
+                        </div>
+                        <div id="id2" class="flex1" style=" width: 20px; height: 220px; text-align: center; ">
+                            <box><i class="fas fa-caret-left fa-3x"></i></box>
+                            <box><i class="fas fa-caret-left fa-3x"></i></box>
+                            <box><i class="fas fa-caret-left fa-3x"></i></box>
+                            <box><i class="fas fa-caret-left fa-3x"></i></box>
+                            
+                        </div><!-- class ="col s6" -->
+                    </div>
+                </div>
+                <!--<iframe id="pag" frameborder="0"></iframe> -->
+            </div>
+
+            <div id="izquierda" class="flex">
+                <br><br><br><br><br>
+                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd1" class="btnfun" onclick=""></box>
+                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd2" class="btnfun" onclick=""></box>
+                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd3" class="btnfun" onclick=""></box>
+                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd4" class="btnfun" onclick="pagprin()"></box>
                 
             </div>
         </div><br>

@@ -35,7 +35,7 @@ function ingresarnumero(n){
     document.getElementById("contra").value = s+n;
     if (document.getElementById("contra").value.length >= 5){
         document.getElementById("contra").value="";
-        document.getElementById("mensaje").innerHTML = "Error";
+        document.getElementById("mensaje").innerHTML = "Solo 4 Digitos Permito";
     }
 }
   
