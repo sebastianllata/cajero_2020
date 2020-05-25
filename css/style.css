@@ -32,7 +32,7 @@ body{
     float: left; 
     border-radius: 20px; 
 }
-
+/*inferior*/
 #contenedor2{
     width: 600px;
     height: 200px;
@@ -94,12 +94,29 @@ form[name="fintaa"]{
 
 }*/
 
-.flex{
+/*.flex{
     display: flex;
   flex-direction: column;
   background-color: DodgerBlue;
+}*/
+/*botones superiores*/
+.flex{
+    display: flex;
+    flex-direction: column;
 }
-#pag1{
+  
+.flex > box {
+    width: 25px;
+    line-height: 25px;
+    margin-left: 13px;   
+}
+.btnfun{
+    width: 50px;
+    height: 50px;
+}
+/*----------------*/
+
+#pag{
     width: 440px;
     height: 290px;
     background-color: rgb(227, 243, 8);
@@ -107,16 +124,79 @@ form[name="fintaa"]{
     border-radius: 20px;
     margin: 1%;
 }
-#caji{
-    margin-left: 60%;
-}
-label[name="contpag1"]{
-    margin-left: 5%;
-    
-}
-input[name="cajita1"]{
+.centrar{
     margin-left: 5%;
 }
 .ya{
     color: white    ;
 }
+#pag1{
+    width: 440px;
+    height: 290px;
+    background-color: rgb(243, 220, 8);
+    border-radius: 20px;
+    margin: 1%;
+    
+}
+/*principal*/
+.labels{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+    color:  rgb(202, 73, 14);
+}
+.flex1{
+    display: flex;
+    flex-direction: column;
+    
+}
+.flex1 > box {
+    width: 20px;
+    line-height: 35px;
+    margin: 5%;
+    color: rgb(202, 73, 14);
+}
+.flex2{
+    display: flex;
+    flex-direction: column;
+    
+}
+.flex2 >  {
+    width: 20px;
+    line-height: 10px;
+    margin: 1%;
+    color: rgb(202, 73, 14);
+      
+}
+#spam{
+    font-size: 30px;
+    font-weight: bold;
+    color:  rgb(14, 13, 13);
+    text-align: center;
+    background-color: rgb(243, 220, 8);
+    border-style: none;
+    width: 100px;
+    margin-top: 15px;
+}
+#saldo{
+    font-size: 30px;
+    font-weight: bold;
+    color:  rgb(14, 13, 13);
+    text-align: center;
+    background-color: rgb(243, 220, 8);
+    border-style: none;
+    width: 100px;
+    margin-top: 15px;
+}
+#p1{
+    font-size: 30px;
+    font-weight: bold;
+    color:  rgb(14, 13, 13);
+    margin-left: 35%;
+    background-color: rgb(243, 220, 8);
+    border-style: none;
+    width: 10px;
+    margin-top: 15px;
+    text-align: center;
+}
+

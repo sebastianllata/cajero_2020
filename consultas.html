@@ -8,38 +8,61 @@
     <script src="js/script.js"></script>
     <script src="js/conexiones.js"></script>
     <script src="https://kit.fontawesome.com/73e1410bae.js" crossorigin="anonymous"></script>
-    
 </head>
 <body>
-    <div id="contenedor">
+    <div id="contenedor" value="pag1">
         <div>
             <div id="derecha" class="flex"><!--id="botonizquierda" type="button" onclick="pagretir()"-->
                 <br><br><br><br><br>
-                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni1" class="btnfun" onclick=""></box>
-                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni2" class="btnfun" onclick=""></box>
-                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni3" class="btnfun" onclick=""></box>
+                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni1" class="btnfun" onclick="pagretir()"></box>
+                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni2" class="btnfun" onclick="pagconsul()"></box>
+                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni3" class="btnfun" onclick="pagoper()"></box>
                 <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni4" class="btnfun" onclick=""></box>
             </div>
             
-            <div id="centro" name="logue">
-                <div id="logueo">
-                    <form id="pag1" name="pag1">
-                        <label for="" name="contpag1" class="centrar" style="font-size: 200%;font-weight: bolder;" >¡Bienvenido al Banco!</label><br>
-                        <label for="" name="contpag1" class="centrar" style="font-size: 100%;">Por favor digite su clave </label><br>
-                        <input type="password" name="cajita1" maxlength=4  value="" id="contra" class="centrar" disabled= true   ><br><br><br>
-                        <span name="cajita2" value="" id="mensaje"  style="font-size: 30px;  font-weight: bold;margin: 6%"></span>
-                        
-                    </form>
+            <div id="centro">
+                <div id="pag1" ><!-- class ="row" -->
+                    <div id="id1" style="width: 440px; height: 70px;  ">
+                        <label for="" style="font-size: 30px;  font-weight: bold;margin: 27%;color:  rgb(202, 73, 14);;" >Consultas</label>
+                    </div><!-- class ="col s12" -->
+                    <div>
+                        <div id="id3" class="flex1" style=" width: 20px; height: 220px; float: left; " >
+                            <!--<box><i class="fas fa-caret-right fa-3x" >Retiro</i></box>-->
+                            <box><i class="fas fa-caret-right fa-3x" ></i></box>
+                            <box><i class="fas fa-caret-right fa-3x" ></i></box>
+                            <box><i class="fas fa-caret-right fa-3x" ></i></box>
+                            <box><i class="fas fa-caret-right fa-3x" ></i></box>
+                        </div><!-- class ="col s6 -->
+                        <div id="" class="flex2" style=" width: 200px; height: 220px; float: left; ">
+                            <box><p class="labels">Saldo Dolares</p></box>
+                            <box><p class="labels"></p></box>
+                            <box><p class="labels"></p></box>
+                            <box><p class="labels">_</p></box>
+                        </div>
+                        <div id="" class="flex2" style=" width: 200px; height: 220px; text-align: end; float: left; ">
+                            <box><p class="labels">Saldo Soles</p></box>
+                            <box><p class="labels">_  </p></box>
+                            <box><p class="labels"></p></box>
+                            <box><p class="labels">_    </p></box>
+                        </div>
+                        <div id="id2" class="flex1" style=" width: 20px; height: 220px; text-align: center; ">
+                            <box><i class="fas fa-caret-left fa-3x"></i></box>
+                            <box><i class="fas fa-caret-left fa-3x"></i></box>
+                            <box><i class="fas fa-caret-left fa-3x"></i></box>
+                            <box><i class="fas fa-caret-left fa-3x"></i></box>
+                            
+                        </div><!-- class ="col s6" -->
+                    </div>
                 </div>
                 <!--<iframe id="pag" frameborder="0"></iframe> -->
             </div>
 
             <div id="izquierda" class="flex">
                 <br><br><br><br><br>
-                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd1" class="btnfun" onclick=""></box>
+                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd1" class="btnfun" onclick="pagtrans()"></box>
                 <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd2" class="btnfun" onclick=""></box>
-                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd3" class="btnfun" onclick=""></box>
-                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd4" class="btnfun" onclick=""></box>
+                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd3" class="btnfun" onclick="pagulti()"></box>
+                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd4" class="btnfun" onclick="pagrreto()"></box>
                 
             </div>
         </div><br>
@@ -54,7 +77,7 @@
                     <input type="button" value="4" onclick="ingresarnumero(this.value)">
                     <input type="button" value="5" onclick="ingresarnumero(this.value)">
                     <input type="button" value="6" onclick="ingresarnumero(this.value)">
-                    <input type="button" value="clear" name="bt" onclick="borrar()" style="background-color: rgb(199, 199, 2); border-color: yellow;"><br>
+                    <input type="button" value="Clear" name="bt" onclick="borrar()" style="background-color: rgb(199, 199, 2); border-color: yellow;"><br>
 
                     <input type="button" value="1" onclick="ingresarnumero(this.value)">
                     <input type="button" value="2" onclick="ingresarnumero(this.value)">

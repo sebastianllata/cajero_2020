@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <script src="js/conexiones.js"></script>    
+    <script src="https://kit.fontawesome.com/73e1410bae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="contenedor" >
+        <div>
+            <div id="derecha" class="flex"><!--id="botonizquierda" type="button" onclick="pagretir()"-->
+                <br><br><br><br><br>
+                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni1" class="btnfun" onclick="pagretir()"></box>
+                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni2" class="btnfun" onclick="pagconsul()"></box>
+                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni3" class="btnfun" onclick="pagoper()"></box>
+                <box id="caji"><input type="image" src="imagenes/botoni.png" id="btni4" class="btnfun" onclick=""></box>
+            </div>
+            
+            <div id="centro">
+                <div id="pag1" ><!-- class ="row" -->
+                    <div id="id1" style="width: 440px; height: 70px;  ">
+                        <label for="" style="font-size: 30px;  font-weight: bold;color:  rgb(202, 73, 14);margin: 12%;" >Transaccion Realizada</label>
+                        <label for="" style="font-size: 30px;  font-weight: bold;color:  rgb(202, 73, 14);margin: 1%;" >Desea Realiza Otra Transaccion?</label>
+                        <label for="" style="font-size: 30px;  font-weight: bold;color:  rgb(20, 20, 19);margin: 5%;">Saldo Modificado</label><input type="text" id="spam" class="lol" >
+                    </div><!-- class ="col s12" -->
+                    <div>
+                        <div id="id3" class="flex1" style=" width: 20px; height: 220px; float: left; " >
+                            <!--<box><i class="fas fa-caret-right fa-3x" >Retiro</i></box>-->
+                            <box><i class="fas fa-caret-right fa-3x" ></i></box>
+                            <box><i class="fas fa-caret-right fa-3x" ></i></box>
+                            <box><i class="fas fa-caret-right fa-3x" ></i></box>
+                            <box><i class="fas fa-caret-right fa-3x" ></i></box>
+                        </div><!-- class ="col s6 -->
+                        <div id="" class="flex2" style=" width: 200px; height: 220px; float: left; ">
+                            <box><p class="labels"></p></box>
+                            <box><p class="labels"></p></box>
+                            <box><p class="labels"></p></box>
+                            <box><p class="labels">_</p></box>
+                        </div>
+                        <div id="" class="flex2" style=" width: 200px; height: 220px; text-align: end; float: left; ">
+                            <box><p class="labels">_</p></box>
+                            <box><p class="labels">_</p></box>
+                            <box><p class="labels">Si</p></box>
+                            <box><p class="labels">No</p></box>
+                        </div>
+                        <div id="id2" class="flex1" style=" width: 20px; height: 220px; text-align: center; ">
+                            <box><i class="fas fa-caret-left fa-3x"></i></box>
+                            <box><i class="fas fa-caret-left fa-3x"></i></box>
+                            <box><i class="fas fa-caret-left fa-3x"></i></box>
+                            <box><i class="fas fa-caret-left fa-3x"></i></box>
+                            
+                        </div><!-- class ="col s6" -->
+                    </div>
+                </div>
+                <!--<iframe id="pag" frameborder="0"></iframe> -->
+            </div>
+            <div id="izquierda" class="flex">
+                <br><br><br><br><br>
+                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd1" class="btnfun" onclick="pagtrans()"></box>
+                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd2" class="btnfun" onclick=""></box>
+                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd3" class="btnfun" onclick="pagulti()"></box>
+                <box id="cajd"><input type="image" src="imagenes/botond.png" id="btnd4" class="btnfun" onclick="pagprin()"></box>
+                
+            </div>
+        </div>
+        
+        <div id="contenedor2">
+            <div id="teclado">
+                <form name="tecladoo">
+                    <input type="button" value="7" onclick="ingresarnumeros(this.value)">
+                    <input type="button" value="8" onclick="ingresarnumeros(this.value)">
+                    <input type="button" value="9" onclick="ingresarnumeros(this.value)">
+                    <input type="button" value="Cancel" name="bt"  onclick="cancel()" style="background-color: red; border-color: red;"><br>
+
+                    <input type="button" value="4" onclick="ingresarnumeros(this.value)">
+                    <input type="button" value="5" onclick="ingresarnumeros(this.value)">
+                    <input type="button" value="6" onclick="ingresarnumeros(this.value)">
+                    <input type="button" value="Clear" name="bt" onclick="borrar()" style="background-color: rgb(199, 199, 2); border-color: yellow;"><br>
+
+                    <input type="button" value="1" onclick="ingresarnumeros(this.value)">
+                    <input type="button" value="2" onclick="ingresarnumeros(this.value)">
+                    <input type="button" value="3" onclick="ingresarnumeros(this.value)">
+                    <input type="button" value="OK" name="bt" onclick="vericlav()" style="background-color: green; border-color: green;"><br>
+
+                    <input type="button" value="⊠" disabled="true">
+                    <input type="button" value="0" onclick="ingresarnumeros(this.value)">
+                    <input type="button" value="." onclick="ingresarnumeros(this.value)">
+                    <input type="button" value="⊠" disabled="true" name="bt"><br>
+                </form>
+
+            </div>
+            <div id="finta">
+                <form name="fintaa">
+                    <div>
+                    <div style="float: left;">
+                        <label for="" class="ya">CARD</label><br>
+                        <img src="imagenes/Imagen1.png" width="90px" height="25px" alt="">
+                    </div>
+                    <div style="float: left; margin-left: 22px;">
+                        <label for="" class="ya">RECEPT</label><br>
+                        <img src="imagenes/Imagen1.png" width="90px" height="25px" alt="">
+                    </div>
+                    </div><br><br>
+                
+                    <div style="float: left;">
+                
+                    <label for="" class="ya">CASH</label><br>
+                    <img src="imagenes/Imagen1.png" width="80%" height="20%" alt=""><br>
+
+                    <label for="" class="ya">DEPOSIT</label><br>
+                    <img src="imagenes/Imagen1.png" width="80%" height="20%" alt="">
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+        <div></div>
+
+    </div>
+</body>
+</html>
